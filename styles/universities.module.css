@@ -1,0 +1,16 @@
+.heroBg{
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),url("/universitiesbg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -1.6rem;
+    height: 60vh;
+}
+
+.accorBtn{
+    background-color: transparent !important;
+}
+
+@media screen {
+    
+}

@@ -1,0 +1,33 @@
+.heroBg {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("/aboutus.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -1.6rem;
+    height: 60vh;
+    position: relative; 
+  }
+  
+.heroBg::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 80px; 
+  left: 0;
+  top: 429px;
+  background: rgba(0, 0, 0, 0.9);
+  filter: blur(25px); 
+  z-index: 1;
+}
+
+
+.aboutBg{
+  background-color: #d0d0d0;
+}
+
+@media (max-width:430px) {
+  .heroBg::after {
+    top: 340px;
+  }
+}

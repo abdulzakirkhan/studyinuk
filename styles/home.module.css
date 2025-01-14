@@ -1,0 +1,400 @@
+.hero{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+}
+.hero{
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),url("/Home Bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+
+.headingMd{
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    text-align: center;
+    
+    color: #FFFFFF;
+
+}
+
+.ptCust{
+    padding-top: 16rem;
+}
+
+
+.textRed{
+    color: #8a0218;
+}
+
+.textPrimary{
+    color: #153d96;
+}
+
+.homeText{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.textSm{
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.textMedium{
+    width: 996px;
+    height: 24px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+.Cards{
+    background-color: #153d96 ;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding-top: 50rem;
+    padding-bottom: 3rem;
+    height: auto !important;
+}
+
+
+.cardsText{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #000000;
+}
+
+
+
+.title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+}
+
+.globalImages{
+    position: relative;
+}
+
+.bottomImage{
+    margin-top: -10rem;
+    padding-left: 5rem;
+    transform: rotate(-5deg);
+    transform-origin: top left;
+}
+
+.leftImage{
+    margin-left: -4rem;
+}
+
+.smPara{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    text-align: center;
+    color: #000000;
+
+}
+
+.gloablSection{
+    background-color: #f2f0f0 !important;
+}
+.liStyle{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    color: #000000;
+}
+
+
+
+
+.cardBlur{
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: backdrop-filter 0.3s ease-in-out;
+}
+
+.liStyle {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+}
+  
+.liStyle.blue::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 14px;
+    height: 14px;
+    background-color: blue;
+    border-radius: 50%;
+}
+
+.liStyle.red::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%); 
+    width: 14px;
+    height: 14px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.courses{
+    background-color: #d0d0d0;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.lgBodyText{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    text-align: center;
+    color: #000000;
+}
+
+.custPositioned{
+    bottom: 50px;
+    left: 70px;
+    color: white;
+}
+
+/* Services */
+.bgPrimary{
+    background-color: #153d96;
+}
+
+.custHeight{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: #8a0218;
+    margin-right: -30px;
+    z-index: 909;
+}
+
+.height{
+    height: 100px;
+}
+
+.custBorder{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Seo content section */
+.cardBg{
+    width: 100%;
+    height: 430px;
+    background-color: #c5c5c5;
+}
+
+
+/* Consultation */
+
+.consultation{
+    background-color: #153d96;
+    height: 280px;
+    margin-top: 5rem;
+}
+
+.imgStyle{
+    position: absolute;
+    top: -205px;
+
+}
+
+/* Contact section */
+
+.contactSection{
+    background-color: #c5c5c5;
+}
+
+.textArea{
+    resize: none;
+}
+.customCardBg{
+    background-image: 
+    linear-gradient(
+        rgba(255, 255, 255, 0.5), 
+        rgba(255, 255, 255, 0.5)
+    ), 
+    url("/Ukflag.png");
+    background-position: center;
+    background-repeat: no-repeat;
+
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+
+    border-radius: 16px;
+    height: 100%; 
+}
+
+
+.IconStyle{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+
+@media (max-width:1200px) {
+    .custHeight{
+        height: 130px;
+        width: 130px;
+    }
+    .height{
+        height: 110px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .cardsText{
+        font-style: normal;
+        font-weight: 200;
+        font-size: 18px;
+        line-height: 80%;
+    }
+    .textMedium{
+        width: 100%;
+        height: auto;
+    
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 120%;
+        text-align: center;
+        color: #FFFFFF;
+    
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 994px) {
+    
+    .textSm{
+
+        font-size: 14px !important;
+        line-height: 120%;
+        text-align: center;
+    
+        color: #FFFFFF;
+    }
+    
+    .p{
+        padding-left: 2.3rem !important;
+    }
+  
+}
+
+
+
+@media (max-width:800px) {
+    .ptCust{
+        padding-top: 5rem;
+    }
+    .headingMd{
+    
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 90%;
+    
+    }
+}
+
+@media (max-width:500px) {
+    .ptCust{
+        padding-top: 5rem;
+    }
+    .cardsText{
+        font-weight: 100;
+        font-size: 16px;
+        line-height: 100%;
+    }
+    .headingMd{
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 100%;
+    
+    }
+    .textSm{
+
+        font-size: 14px;
+        line-height: 120%;
+        text-align: center;
+    
+        color: #FFFFFF;
+    }
+    .textMedium{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+    
+    }
+    .homeText{
+        font-weight: normal;
+        font-size: 14px !important;
+        /* line-height: 100%; */
+    }
+    .p{
+        padding-left: 2.3rem !important;
+    }
+    .textSm{
+        font-size: 13px;
+        text-align: justify;
+    }
+    .customCardBg{
+        background-image: none !important;
+    }
+}

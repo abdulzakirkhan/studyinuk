@@ -1,0 +1,49 @@
+.heroBg {
+    background-image:  url("/contactus.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -3.5rem;
+    width: 50%;
+    height: 70vh;
+  }
+
+
+  .bgCust{
+    background-color: #153d96;
+}
+
+.custBorder{
+    border-top-right-radius: 24px;
+    border-top-left-radius: 24px;
+}
+
+.Line{
+    width: 100%;
+    height: 2px;
+}
+
+.border{
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.IconStyle{
+    position: absolute;
+    top: 10px;
+    left: 16px;
+}
+
+.customBorder{
+    position: relative;
+}
+.customBorder::after{
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: -6px;
+    background-color: #a1a1a1;
+    height: 440px;
+    width: 3px;
+    border-radius: 12px;
+}

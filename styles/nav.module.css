@@ -1,0 +1,30 @@
+.top25{
+    top: 10px;
+}
+
+.logo{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 120%;
+    color: #153D96;
+    font-style: normal;
+    font-family: 'Roboto';
+}
+
+.cutNav{
+    font-family: 'Roboto' !important;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+
+    color: #153D96;
+}
+
+/* In your nav.module.css */
+.custNav {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transition: backdrop-filter 0.3s ease-in-out;
+}
