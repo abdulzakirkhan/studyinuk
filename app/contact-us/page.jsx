@@ -61,7 +61,7 @@ const page = () => {
                     <div className="row g-3">
                       <div className="col-md-4">
                         <Field
-                          className="form-control"
+                          className="form-control border"
                           type="text"
                           name="fullName"
                           placeholder="Full Name"

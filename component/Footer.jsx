@@ -7,26 +7,26 @@ const Footer = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-3">
-            <h5>Logo</h5>
+            <h5 className="fs-36-7">Logo</h5>
             <ul className="list-unstyled py-4">
               <li className=""><a href="#" className="text-white text-decoration-none">Your Gateway to a World-Class Education</a></li>
             </ul>
           </div>
 
           <div className="col-md-3">
-            <h5>Information</h5>
+            <h5 className="fs-207">Information</h5>
             <ul className="list-unstyled py-4">
-              <li className="py-1"><a href="#" className="text-white text-decoration-none">Contact us</a></li>
-              <li className="py-1"><a href="#" className="text-white text-decoration-none">About us</a></li>
-              <li className="py-1"><a href="#" className="text-white text-decoration-none">Blogs</a></li>
-              <li className="py-1"><a href="#" className="text-white text-decoration-none">Privacy policy</a></li>
-              <li className="py-1"><a href="#" className="text-white text-decoration-none">FAQs</a></li>
+              <li className="py-1"><a href="#" className="text-white text-decoration-none fs-16-sm">Contact us</a></li>
+              <li className="py-1"><a href="#" className="text-white text-decoration-none fs-16-sm">About us</a></li>
+              <li className="py-1"><a href="#" className="text-white text-decoration-none fs-16-sm">Blogs</a></li>
+              <li className="py-1"><a href="#" className="text-white text-decoration-none fs-16-sm">Privacy policy</a></li>
+              <li className="py-1"><a href="#" className="text-white text-decoration-none fs-16-sm">FAQs</a></li>
             </ul>
           </div>
 
 
           <div className="col-md-3">
-            <h5>Address</h5>
+            <h5 className="fs-207">Address</h5>
             <ul className="list-unstyled py-4">
                 <li className="d-flex gap-2 py-1">
                     <Image src={"/locationIcon.png"} width={20} height={18} alt='location' className="mt-2" />
@@ -34,17 +34,17 @@ const Footer = () => {
                 </li>
                 <li className="d-flex gap-2 py-1">
                     <Image src={"/call.png"} width={25} height={20} alt='Call' className="mt-1" />
-                    <a href="#" className="text-white text-decoration-none">+9203323434123</a>
+                    <a href="#" className="text-white text-decoration-none fs-16-sm">+9203323434123</a>
                 </li>
                 <li className="d-flex gap-2 py-1">
                     <Image src={"/mail.png"} width={25} height={20} alt='Call' className="mt-1" />
-                    <a href="#" className="text-white text-decoration-none">studyinuk@gmail.com</a>
+                    <a href="#" className="text-white text-decoration-none fs-16-sm">studyinuk@gmail.com</a>
                 </li>
             </ul>
           </div>
 
           <div className="col-md-3">
-            <h5>Get in Touch</h5>
+            <h5 className="fs-207">Get in Touch</h5>
             <div className="py-4 d-flex gap-2">
                 <a href="#" className="text-white">
                     <Image src={"/Instagram.png"} width={50} height={50} alt="Instagram" />

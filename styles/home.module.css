@@ -5,18 +5,39 @@
     width: 100%;
     z-index: 0;
 }
-.hero{
-    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),url("/Home Bg.png");
+/* .hero{
+    background-image:url("/Home Bg.png") !important;
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+} */
+
+.hero {
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url("/Home Bg.png") !important;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
 }
-
-
+.hero::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 80px; 
+    left: 0;
+    bottom: -30px;
+    background: rgba(0, 0, 0, 0.9);
+    filter: blur(25px); 
+    z-index: 1;
+  }
 .headingMd{
     
-    font-family: 'Roboto';
+    font-family: 'Roboto' !important;
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
@@ -26,7 +47,6 @@
     color: #FFFFFF;
 
 }
-
 .ptCust{
     padding-top: 16rem;
 }
@@ -49,19 +69,17 @@
     text-align: center;
     color: #FFFFFF;
 }
-
 .textSm{
 
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 120%;
-    text-align: center;
+    /* text-align: center; */
 
     color: #FFFFFF;
 }
-
 .textMedium{
     width: 996px;
     height: 24px;
@@ -96,7 +114,6 @@
     text-align: center;
     color: #000000;
 }
-
 
 
 .title{
@@ -168,7 +185,7 @@
     transform: translateY(-50%);
     width: 14px;
     height: 14px;
-    background-color: blue;
+    background: #153D96;
     border-radius: 50%;
 }
 
@@ -180,10 +197,9 @@
     transform: translateY(-50%); 
     width: 14px;
     height: 14px;
-    background-color: red;
+    background: #8A0218;
     border-radius: 50%;
 }
-
 .courses{
     background-color: #d0d0d0;
     backdrop-filter: blur(8px);
@@ -261,22 +277,29 @@
     resize: none;
 }
 .customCardBg{
-    background-image: 
-    linear-gradient(
-        rgba(255, 255, 255, 0.5), 
-        rgba(255, 255, 255, 0.5)
-    ), 
-    url("/Ukflag.png");
-    background-position: center;
-    background-repeat: no-repeat;
-
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(40px);
-    -webkit-backdrop-filter: blur(40px);
-
-    border-radius: 16px;
-    height: 100%; 
+    
+background: rgba(255, 255, 255, 0.8);
+box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(12px);
+border-radius: 16px;
+    position: relative;
 }
+.customCardBg::after {
+    content: "";
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.4)),
+        url("/Ukflag.png");
+    position: absolute;
+    top: 90px !important;
+    left: calc(50% - 627.3px / 2);
+    width: 627.3px;
+    height: 390px;
+    z-index: -2;
+    filter: blur(10px); 
+    background-size: cover;
+    background-position: center; 
+}
+
 
 
 .IconStyle{
@@ -288,8 +311,13 @@
 
 @media (max-width:1200px) {
     .custHeight{
-        height: 130px;
-        width: 130px;
+        height: 90px !important;
+        width: 90px !important;
+        border-radius: 50% !important;
+    }
+    .imgWidth{
+        width: 85px !important;
+        height: 55px !important;
     }
     .height{
         height: 110px;

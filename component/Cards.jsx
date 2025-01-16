@@ -1,54 +1,9 @@
-"use client";
-import React from "react";
-import Slider from "react-slick";
+import React from 'react'
 import style from "../styles/newsblgs.module.css"
 
-function SliderComponent() {
-  const cardsData=[
-    {title:"lorem ipsum dolor sit amet consecuter",description:`Lorem ipsum dolor sit amet consectetur. Molestie lorem iaculis elit vestibulum sem. Cras sit massa est sit. Magna rhoncus ac feugiat mattis et cursus. Pellentesque pharetra aliquam nulla turpis habitasse egestas facilisis et tincidunt.`,img:"third.png"},
-    {title:"lorem ipsum dolor sit amet consecuter",description:`Lorem ipsum dolor sit amet consectetur. Molestie lorem iaculis elit vestibulum sem. Cras sit massa est sit. Magna rhoncus ac feugiat mattis et cursus. Pellentesque pharetra aliquam nulla turpis habitasse egestas facilisis et tincidunt.`,img:"second.png"},
-    {title:"lorem ipsum dolor sit amet consecuter",description:`Lorem ipsum dolor sit amet consectetur. Molestie lorem iaculis elit vestibulum sem. Cras sit massa est sit. Magna rhoncus ac feugiat mattis et cursus. Pellentesque pharetra aliquam nulla turpis habitasse egestas facilisis et tincidunt.`,img:"Subtract.png"},
-    {title:"lorem ipsum dolor sit amet consecuter",description:`Lorem ipsum dolor sit amet consectetur. Molestie lorem iaculis elit vestibulum sem. Cras sit massa est sit. Magna rhoncus ac feugiat mattis et cursus. Pellentesque pharetra aliquam nulla turpis habitasse egestas facilisis et tincidunt.`,img:"sub2.png"},
-]
-  var settings = {
-    arrows: true, 
-    dots: false,
-    infinite: true, 
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1, 
-    initialSlide: 0,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: false,
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2, 
-          slidesToScroll: 1,
-          dots: false, 
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          dots: false, 
-        },
-      },
-    ],
-  };
-
+const Cards = ({cardsData}) => {
   return (
-    <Slider {...settings} className="overflow-hidden ">
+    <>
       {cardsData.map((card, index) => (
                                     <div className={`col-md-6`} key={index}>
                                         <div className="card border-0">
@@ -83,10 +38,8 @@ function SliderComponent() {
                                         </div>
                                     </div>
                                 ))}
-    </Slider>
-  );
+    </>
+  )
 }
 
-
-
-export default SliderComponent;
+export default Cards

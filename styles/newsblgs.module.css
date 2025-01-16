@@ -22,8 +22,19 @@
   }
 
   .top12{
-    top: 19px;
-    right: 20px;
+    top: 0;
+    right: 0;
+  }
+  .wmd{
+    top: -4px;
+    width: 80px;
+    height: 80px;
+  }
+
+
+  .top10{
+    top: -8px !important;
+    right: -7px !important;
   }
   .top10{
     top: 12px;
@@ -33,3 +44,4 @@
   .border{
     border: 3px solid white;
   }
+

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React, { useState } from 'react';
 
 const Accordion = () => {
@@ -46,6 +47,16 @@ const Accordion = () => {
                 aria-controls={`collapse${item.id}`}
               >
                 {item.title}
+               {/* Custom Arrow (Hidden by default and only shown when needed) */}
+                <div className="ms-auto">
+                  <Image
+                    src={selectedUniversityId === item.id ? '/close.png' : '/open.png'} 
+                    width={18.67} 
+                    height={10.67} 
+                    alt={selectedUniversityId === item.id ? '' : ''}
+                    className="custom-accordion-arrow"
+                  />
+                </div>
               </button>
             </h2>
             <div id={`collapse${item.id}`} className={`accordion-collapse collapse ${isOpen ? 'show' : ''}`} aria-labelledby={`heading${item.id}`} data-bs-parent="#accordionExample">

@@ -63,7 +63,7 @@ const page = () => {
                         <p className={style.textSm}>The UK has a rich legacy of academic excellence. With over 600,000 students from around the globe choosing the UK each year, you’ll join a diverse community dedicated to innovation, creativity, and global impact.</p>
                         <p className={`${style.textMedium}`}>Enquire now to explore your path to a world-class UK education and a future full of possibilities.</p>
                        <div className="text-center">
-                        <button type='button' className="btn btn-primary btn-cust border-0 py-sm-2 py-md-3 px-3">Enquire Now</button>
+                        <button type='button' className="btn btn-primary btn-cust border-0 enqbtn">Enquire Now</button>
                        </div>
 
                        <div className="col-12 py-md-4 mt-2">
@@ -75,70 +75,70 @@ const page = () => {
             </div>
         </div>
 
-        <section className={`${style.Cards}`} style={{height:"100vh"}}>
-          <div className="container">
-            <div className="row justify-content-center g-3 g-md-5">
-              <div className="col-md-3">
-                <div className="card h-100 border-0">
-                  <div className="card-body d-flex flex-column align-items-center justify-content-center">
-                    <h3 className={`textBrown ${style.title}`}>160+</h3>
-                    
-                    <div className="d-flex gap-2 align-items-center">
-                      <Image src="/universities.png" width={26} height={26} className="img-fluid" alt="universities" />
-                      <p className={`m-0 ${style.cardsText}`}>Universities</p>
+        <section  className={`${style.Cards}`} style={{height:"100vh"}}>
+            <div className="container">
+              <div className="row justify-content-center g-3 g-md-5">
+                <div className="col-md-3">
+                  <div className="card h-100 border-0">
+                    <div className="card-body d-flex flex-column align-items-center justify-content-center">
+                      <h3 className={`textBrown ${style.title}`}>160+</h3>
+                      
+                      <div className="d-flex gap-2 align-items-center">
+                        <Image src="/universities.png" width={26} height={26} className="img-fluid" alt="universities" />
+                        <p className={`m-0 ${style.cardsText}`}>Universities</p>
+                      </div>
                     </div>
+
                   </div>
-
                 </div>
-              </div>
 
-              <div className="col-md-3">
-                <div className="card h-100 border-0">
-                  <div className="card-body d-flex flex-column align-items-center justify-content-center">
-                    <h3 className={`textBrown ${style.title}`}>1,500+</h3>
-                    
-                    <div className="d-flex gap-2 align-items-center">
-                      <Image src="/scholarships.png" width={26} height={26} className="img-fluid" alt="" />
-                      <p className={`m-0 ${style.cardsText}`}>Scholarships</p>
+                <div className="col-md-3">
+                  <div className="card h-100 border-0">
+                    <div className="card-body d-flex flex-column align-items-center justify-content-center">
+                      <h3 className={`textBrown ${style.title}`}>1,500+</h3>
+                      
+                      <div className="d-flex gap-2 align-items-center">
+                        <Image src="/scholarships.png" width={26} height={26} className="img-fluid" alt="" />
+                        <p className={`m-0 ${style.cardsText}`}>Scholarships</p>
+                      </div>
                     </div>
+
                   </div>
-
                 </div>
-              </div>
 
-              <div className="col-md-3">
-                <div className="card h-100 border-0">
-                  <div className="card-body d-flex flex-column align-items-center justify-content-center">
-                    <h3 className={`textBrown ${style.title}`}>50,000+</h3>
-                    
-                    <div className="d-flex gap-1 align-items-center">
-                      <Image src="/courses.png" width={26} height={26} className="img-fluid" alt="" />
-                      <p className={`m-0 ${style.cardsText}`}>Courses offered</p>
+                <div className="col-md-3">
+                  <div className="card h-100 border-0">
+                    <div className="card-body d-flex flex-column align-items-center justify-content-center">
+                      <h3 className={`textBrown ${style.title}`}>50,000+</h3>
+                      
+                      <div className="d-flex gap-1 align-items-center">
+                        <Image src="/courses.png" width={26} height={26} className="img-fluid" alt="" />
+                        <p className={`m-0 ${style.cardsText}`}>Courses offered</p>
+                      </div>
                     </div>
+
                   </div>
-
                 </div>
-              </div>
 
-              <div className="col-md-3">
-                <div className="card h-100 border-0">
-                  <div className="card-body d-flex flex-column align-items-center justify-content-center">
-                    <h3 className={`textBrown ${style.title}`}>600,000+</h3>
-                    
-                    <div className="d-flex gap-1 align-items-center">
-                      <Image src="/studets.png" width={26} height={26} className="img-fluid" alt="" />
-                      <p className={`m-0 ${style.cardsText}`}>International students</p>
+                <div className="col-md-3">
+                  <div className="card h-100 border-0">
+                    <div className="card-body d-flex flex-column align-items-center justify-content-center">
+                      <h3 className={`textBrown ${style.title}`}>600,000+</h3>
+                      
+                      <div className="d-flex gap-1 align-items-center">
+                        <Image src="/studets.png" width={26} height={26} className="img-fluid" alt="" />
+                        <p className={`m-0 ${style.cardsText}`}>International students</p>
+                      </div>
                     </div>
+
                   </div>
-
                 </div>
+
+
+
+
               </div>
-
-
-
-
             </div>
-          </div>
         </section>
 
 
@@ -173,6 +173,9 @@ const page = () => {
                       </li>
                     ))}
                     </ul>
+                    <div className="text-center py-5">
+                      <button type="button" className={`btn learMore text-white`}>Learn More</button>
+                    </div>
                   </div>
 
                 </div>
@@ -193,7 +196,7 @@ const page = () => {
                 <div key={index} className="col-md-3">
                   <div className={`card d-flex py-5 flex-column justify-content-center align-items-center ${index === 0 ? "bgBrown" : ""}`}>
                     <Image src={course.img} width={92} height={92} alt={course.title} />
-                    <h1 className={`${index === 0 ? "text-white" : "text-black"}`}>{course.title}</h1>
+                    <h1 className={`subtitle ${index === 0 ? "text-white" : "text-black"}`}>{course.title}</h1>
                   </div>
                 </div>
               ))}
@@ -206,7 +209,7 @@ const page = () => {
             <div className="row g-0">
               <div className="col-md-12 d-flex flex-column justify-content-center align-items-center">
                 <h1 className={`${style.headingMd} text-black`}>Find Your <span className={`${style.textPrimary}`}>Perfect</span> <span className={`${style.textRed}`}>University</span> in the UK</h1>
-                <p className={`w-75 text-center ${style.lgBodyText}`}>UK universities are known for academic excellence across a wide range of fields. Discover the courses most popular among international students, and find the perfect match for your career ambitions.</p>
+                <p className={`w-75 text-center ${style.subtitle}`}>From historic institutions to cutting-edge research centers, the UK has over 165 universities to explore</p>
                 <div className="w-100 text-end px-4">
                   <Link href={"/"}>View All</Link>
                 </div>
@@ -216,7 +219,7 @@ const page = () => {
                 <div key={index} className="col-md-4 position-relative">
                   <div className="card p-0 border-0 bg-transparent border">
                     <div className="card-body border-0">
-                      <h5 className={`card-title position-absolute ${style.custPositioned} px-3`}>{university.title}</h5>
+                      <h5 className={`card-title  position-absolute ${style.subtitle} ${style.custPositioned} px-3`}>{university.title}</h5>
                       <Image
                         src={`/${university.img}`}
                         alt={university.title}
@@ -237,8 +240,8 @@ const page = () => {
           <div className="container">
             <div className="row">
               <div className="col-md-12 text-center">
-                <h1>Our <span className={`${style.textPrimary} ${style.headingMd}`}>Services</span> </h1>
-                <p className={`${style.lgBodyText}`}>How We Help You Achieve Your Dream</p>
+                <h1 className='heading2'>Our <span className={`${style.textPrimary} ${style.headingMd}`}>Services</span> </h1>
+                <p className={`${style.subtitle}`}>How We Help You Achieve Your Dream</p>
               </div>
             </div>
           </div>
@@ -361,3 +364,4 @@ const page = () => {
 }
 
 export default page
+

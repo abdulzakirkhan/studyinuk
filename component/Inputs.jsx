@@ -64,7 +64,7 @@ const Inputs = () => {
       </div>
 
       <div className="col-12 text-sm-center  col-md-2">
-        <button type="button" className={`btn px-sm-5 w-sm-100 btn-primary`}>
+        <button type="button" className={`btn findBtn text-white`}>
           Find
         </button>
       </div>

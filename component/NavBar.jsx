@@ -1,6 +1,6 @@
 "use client";  // Ensures the component is rendered on the client side
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import style from "../styles/nav.module.css";
@@ -12,11 +12,15 @@ const NavBar = () => {
   const handleLinkClick = (path) => {
     setActiveLink(path); 
   };
+  useEffect(() => {
+  
+  }, [])
+  
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className={`navbar ${style.custNav} navbar-expand-lg border shadow-lg border-0`} style={{zIndex: "22"}}>
+    <nav className={`navbar ${style.custNavBlur} navbar-expand-lg border shadow-lg border-0`} style={{zIndex: "22"}}>
       <div className="container">
         <Link className={`navbar-brand ${style.logo}`} href="/" onClick={() => handleLinkClick('/')}>
           Logo
@@ -37,13 +41,13 @@ const NavBar = () => {
               </Link>
             </li>
             <li className="nav-item px-1">
-              <Link className={`nav-link ${style.cutNav} px-0 mx-2 ${activeLink === '/newsblogs' ? 'active' : ''}`} href="/newsblogs" onClick={() => handleLinkClick('/newsblogs')} >
-                News/Blogs
+              <Link className={`nav-link ${style.cutNav} px-0 mx-2 ${activeLink === '/about-us' ? 'active' : ''}`} href="/about-us" onClick={() => handleLinkClick('/about-us')} >
+                About Us
               </Link>
             </li>
             <li className="nav-item px-1">
-              <Link className={`nav-link ${style.cutNav} px-0 mx-2 ${activeLink === '/about-us' ? 'active' : ''}`} href="/about-us" onClick={() => handleLinkClick('/about-us')} >
-                About Us
+              <Link className={`nav-link ${style.cutNav} px-0 mx-2 ${activeLink === '/newsblogs' ? 'active' : ''}`} href="/newsblogs" onClick={() => handleLinkClick('/newsblogs')} >
+                News/Blogs
               </Link>
             </li>
             <li className="nav-item px-1">

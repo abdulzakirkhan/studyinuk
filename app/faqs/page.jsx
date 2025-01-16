@@ -8,7 +8,7 @@ const page = () => {
        <div className={`${style.heroBg}`}>
             <div className="container py-4">
                 <div className="row py-5 mt-3 mt-md-5">
-                    <div className="col-md-12">
+                    <div className="col-md-12 mt-md-5 pt-md-5">
                         <div className="w-80 m-auto">
                             <h3 className="text-white heading2 text-center">FAQS</h3>
                             <p className="text-white text-center">Can't find what you're looking for? Browse our frequently asked questions below.</p>
