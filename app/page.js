@@ -196,7 +196,7 @@ const page = () => {
                 <div key={index} className="col-md-3">
                   <div className={`card d-flex py-5 flex-column justify-content-center align-items-center ${index === 0 ? "bgBrown" : ""}`}>
                     <Image src={course.img} width={92} height={92} alt={course.title} />
-                    <h1 className={`subtitle ${index === 0 ? "text-white" : "text-black"}`}>{course.title}</h1>
+                    <h1 className={`subtitle fw-semibold ${index === 0 ? "text-white" : "text-black"}`}>{course.title}</h1>
                   </div>
                 </div>
               ))}
